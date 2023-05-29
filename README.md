@@ -34,7 +34,7 @@ You can download the fix as is, but in order for Windows to be able to execute p
 [Releases](https://github.com/xatornet/GridMTFix/releases)
 
 ### 2-Execute PATCHER.exe
-Let it do it's things
+Let it do its things
 
 ### 3-Run the game and reconfigure it.
 Your settings should be gone. Set them up again.
