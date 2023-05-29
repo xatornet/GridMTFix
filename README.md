@@ -1,5 +1,5 @@
 # GridMTFix
-A Race Driver: Grid Multithread Fix, for SteamOS or Linux
+A Race Driver: Grid Multithread Fix, for Windows OS
 
 ## A little insight
 The game was launched on 2008, just prior to Intel's Sandy Bridge Core microarchitecture , which more or less marked a milestone on multithreading as we all know it nowadays.
@@ -17,28 +17,26 @@ Also, this method fixes several other hardware detection problems as:
 Well, it copies my fix xml files to your game's system folder, and then using a template, will detect your CPU's logical cores, and create a personalized hardware restriction file, to make your the game uses the most amount of cores possible.
 
 ## Important Requirement
-This scripts is expecting that you use Grid from Steam, and also, It expect you are using a DRMLess exe with a 4GB LAA patch applied.
+This scripts is expecting that you use Race Driver: Grid with a DRMLess exe with a 4GB LAA patch applied. In case you are using GOG or Steam Releases, read below:
 
-It also expects that you already have Git installed.
+### * GOG Release
+Gog release is already DRMless, so you only have to apply the 4GB LAA Patch. Use [NTCore's 4GB Tpatch tool](https://ntcore.com/?page_id=371) to patch the exe file and you are good to continue with the other steps of this document.
 
-If you have another release of the game, for instance, GOG release, you'll have to change the destination_folder and output_file paths to your liking before running the script.
+### * Steam Release
+Steam release has DRM, so if you apply the 4GB LAA Patch to it, it will fail. You have to remove it's DRM using [atom0s Steamless tool](https://github.com/atom0s/Steamless) and then, use the [NTCore's 4GB Tpatch tool](https://ntcore.com/?page_id=371) to patch the exe file. It's mandatory doing it in this exact order. Then, continue with this instructions.
 
 ## How to apply the fix
 If you already have the requirements above done, the fix is easy to apply.
 
-### 1-Download the fix to your home folder
-```
-git clone https://github.com/xatornet/GridMTFix.git
-```
+### 1-Download the fix 
+You can download the fix as is, but in order for Windows to be able to execute powershell scripts, you have to enable it through the admin powershell console. And it's tedious. That's why I've compiled with PS2exe the script into an EXE file. Download the file "GridMTFix_Win.zip", and place "PATCHER.exe" and the folder "Files" on the main Race Driver Grid folder, just near the grid.exe file.
 
-### 2-Set executable attributes to the script
-```
-cd GridMTFix/
-chmod +x GridMTFix.sh
-```
+[Releases](https://github.com/xatornet/GridMTFix/releases)
 
-### 3-Execute the script
-```
-sh GridMTFix.sh
-```
+### 2-Execute PATCHER.exe
+Let it do it's things
+
+### 3-Run the game and reconfigure it.
+Your settings should be gone. Set them up again.
+
 ### If everything works, you can now play Race Driver: Grid making the most out of your hardware.
