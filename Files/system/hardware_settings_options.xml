@@ -1,0 +1,916 @@
+<hardware_config_options>
+    
+    <!-- Audio Defaults - This category offers default audio settings which can be loaded to match hardware quality when the game is first run. -->
+    <category name="sfx_quality">
+        <option name="low" >
+            <audio_card>
+                <audio reverbs="1" voices="119" />
+            </audio_card>
+        </option>
+        <option name="medium" >
+            <audio_card>
+                <audio reverbs="1" voices="120" />
+            </audio_card>
+        </option>
+        <option name="high" >
+            <audio_card>
+                <audio reverbs="1" voices="121" type="default" />
+            </audio_card>
+        </option>
+    </category>   
+     
+    <category name="sfx_accel" >
+      <option name="off" >
+        <audio_card>
+          <audio mixing="software" />
+        </audio_card>
+      </option>
+      <option name="OpenAL" >
+        <audio_card>
+          <audio mixing="default" />
+        </audio_card>
+      </option>
+    </category>
+
+    <category name="safe_mode" >
+      <option name="on">
+        <graphics_card>
+          <resolution width="800" height="600" >
+            <refreshRate rate="60" />
+          </resolution>
+        </graphics_card>
+        <ref category="aspect" option="auto" />
+        <ref category="fullscreen" option="true" />
+        <ref category="multisampling" option="off" />
+        <ref category="headlights" option="low" />
+        <ref category="vsync" option="on" />
+        <ref category="wind" option="off" />
+        <ref category="shadows" option="off" />
+        <ref category="particles" option="low" />
+        <ref category="mirrors" option="off" />
+        <ref category="crowd" option="off" />
+        <ref category="cloth" option="on" />
+        <ref category="groundCover" option="low" />
+        <ref category="trees" option="low" />
+        <ref category="reflections" option="low" />
+        <ref category="post" option="on" />
+        <ref category="motionBlur" option="off" />
+        <ref category="skidmarks" option="off" />
+        <ref category="vehicleDrivers" option="low" />
+        <ref category="vehicleLOD" option="low" />
+        <ref category="track_relections" option="off" />
+        <ref category="physics" option="low" />
+      </option>
+    </category>
+
+    <!-- Graphics Defaults - This category offers default overall graphical settings. -->
+    <category name="graphicsDetail" >
+      <option name="minimal">
+        <graphics_card>
+          <resolution width="1280" height="720" >
+            <refreshRate rate="60" />
+          </resolution>
+        </graphics_card>
+        <ref category="aspect" option="auto" />
+        <ref category="fullscreen" option="true" />
+        <ref category="multisampling" option="off" />
+        <ref category="headlights" option="low" />
+        <ref category="vsync" option="on" />
+        <ref category="wind" option="off" />
+        <ref category="shadows" option="off" />
+        <ref category="particles" option="off" />
+        <ref category="mirrors" option="off" />
+        <ref category="crowd" option="off" />
+        <ref category="cloth" option="off" />
+        <ref category="groundCover" option="off" />
+        <ref category="trees" option="low" />
+        <ref category="reflections" option="low" />
+        <ref category="post" option="off" />
+        <ref category="motionBlur" option="off" />
+        <ref category="skidmarks" option="off" />
+        <ref category="vehicleDrivers" option="off" />
+        <ref category="vehicleLOD" option="low" />
+        <ref category="track_relections" option="off" />
+        <ref category="physics" option="low" />
+      </option>
+      <option name="ultralow">
+        <graphics_detail level="ultralow" />
+        <graphics_card>
+          <resolution width="1280" height="720" >
+            <refreshRate rate="60" />
+          </resolution>
+        </graphics_card>
+        <ref category="aspect" option="auto" />
+        <ref category="fullscreen" option="true" />
+        <ref category="multisampling" option="2xmsaa" />
+        <ref category="headlights" option="low" />
+        <ref category="vsync" option="on" />
+        <ref category="wind" option="off" />
+        <ref category="shadows" option="ultralow" />
+        <ref category="particles" option="ultralow" />
+        <ref category="mirrors" option="off" />
+        <ref category="crowd" option="off" />
+        <ref category="cloth" option="off" />
+        <ref category="groundCover" option="low" />
+        <ref category="trees" option="low" />
+        <ref category="reflections" option="low" />
+        <ref category="post" option="on" />
+        <ref category="motionBlur" option="off" />
+        <ref category="skidmarks" option="off" />
+        <ref category="vehicleDrivers" option="off" />
+        <ref category="vehicleLOD" option="low" />
+        <ref category="track_relections" option="off" />
+        <ref category="physics" option="low" />
+      </option>    
+      <option name="low">
+			<graphics_detail level="low" />
+            <graphics_card>
+				<resolution width="1280" height="720" >
+					<refreshRate rate="60" />
+				</resolution>
+			</graphics_card>
+            <ref category="aspect" option="auto" />
+            <ref category="fullscreen" option="true" />
+            <ref category="multisampling" option="2xmsaa" />
+            <ref category="headlights" option="low" />
+            <ref category="vsync" option="on" />
+            <ref category="wind" option="off" />
+            <ref category="shadows" option="low" />
+            <ref category="particles" option="low" />
+            <ref category="mirrors" option="off" />
+            <ref category="crowd" option="off" />
+            <ref category="cloth" option="off" />
+            <ref category="groundCover" option="low" />
+            <ref category="trees" option="low" />
+            <ref category="reflections" option="low" />
+            <ref category="post" option="on" />
+            <ref category="motionBlur" option="off" />
+            <ref category="skidmarks" option="off" />
+            <ref category="vehicleDrivers" option="low" />
+            <ref category="vehicleLOD" option="low" />
+            <ref category="track_relections" option="off" />
+		<ref category="physics" option="medium" />
+        </option>
+        <option name="medium" type="default" >
+            <graphics_detail level="medium" />
+            <graphics_card>
+				<resolution width="1600" height="900" >
+					<refreshRate rate="60" />
+				</resolution>
+			</graphics_card>
+            <ref category="aspect" option="auto" />
+            <ref category="fullscreen" option="true" />
+            <ref category="multisampling" option="2xmsaa" />
+            <ref category="headlights" option="medium" />
+            <ref category="vsync" option="on" />
+            <ref category="wind" option="off" />
+            <ref category="shadows" option="medium" />
+            <ref category="particles" option="medium" />
+            <ref category="mirrors" option="on" />
+            <ref category="crowd" option="on" />
+            <ref category="cloth" option="on" />
+            <ref category="groundCover" option="medium" />
+            <ref category="trees" option="medium" />
+            <ref category="reflections" option="medium" />
+            <ref category="post" option="on" />
+            <ref category="motionBlur" option="on" />
+            <ref category="skidmarks" option="on" />
+            <ref category="vehicleDrivers" option="medium" />
+            <ref category="vehicleLOD" option="medium" />
+            <ref category="track_relections" option="on" />
+ 		<ref category="physics" option="high" />
+       </option>
+        <option name="high">
+            <graphics_detail level="high" />
+            <graphics_card>
+				<resolution width="1920" height="1080" >
+					<refreshRate rate="60" />
+				</resolution>
+			</graphics_card>
+            <ref category="aspect" option="auto" />
+            <ref category="fullscreen" option="true" />
+            <ref category="multisampling" option="4xmsaa" />
+            <ref category="headlights" option="high" />
+            <ref category="vsync" option="on" />
+            <ref category="wind" option="on" />
+            <ref category="shadows" option="high" />
+            <ref category="particles" option="high" />
+            <ref category="mirrors" option="on" />
+            <ref category="crowd" option="on" />
+            <ref category="cloth" option="on" />
+            <ref category="groundCover" option="high" />
+            <ref category="trees" option="high" />
+            <ref category="reflections" option="high" />
+            <ref category="post" option="on" />
+            <ref category="motionBlur" option="on" />
+            <ref category="skidmarks" option="on" />
+            <ref category="vehicleDrivers" option="high" />
+            <ref category="vehicleLOD" option="high" />
+            <ref category="track_relections" option="on" />
+ 		<ref category="physics" option="high" />
+        </option>
+        <option name="ultra">
+            <graphics_detail level="ultra" />
+            <graphics_card>
+				<resolution width="1920" height="1080" >
+					<refreshRate rate="60" />
+				</resolution>
+			</graphics_card>
+            <ref category="aspect" option="auto" />
+            <ref category="fullscreen" option="true" />
+            <ref category="multisampling" option="4xmsaa" />
+            <ref category="headlights" option="high" />
+            <ref category="vsync" option="on" />
+            <ref category="wind" option="on" />
+            <ref category="shadows" option="ultra" />
+            <ref category="particles" option="ultra" />
+            <ref category="mirrors" option="on" />
+            <ref category="crowd" option="on" />
+            <ref category="cloth" option="on" />
+            <ref category="groundCover" option="high" />
+            <ref category="trees" option="high" />
+            <ref category="reflections" option="ultra" />
+            <ref category="post" option="on" />
+            <ref category="motionBlur" option="on" />
+            <ref category="skidmarks" option="on" />
+            <ref category="vehicleDrivers" option="ultra" />
+            <ref category="vehicleLOD" option="ultra" />
+            <ref category="track_relections" option="on" />
+  		<ref category="physics" option="high" />
+       </option>
+    </category>
+          
+    <category name="aspect" >
+		<option name="auto" >
+			<graphics_card>
+				<resolution aspect="normal" />
+			</graphics_card>
+		</option>
+		<option name="4:3" >
+			<graphics_card>
+				<resolution aspect="4:3" />
+			</graphics_card>
+		</option>
+		<option name="5:4" >
+			<graphics_card>
+				<resolution aspect="5:4" />
+			</graphics_card>
+		</option>
+		<option name="16:9" >
+			<graphics_card>
+				<resolution aspect="16:9" />
+			</graphics_card>
+		</option>
+		<option name="16:10" >
+			<graphics_card>
+				<resolution aspect="16:10" />
+			</graphics_card>
+		</option>
+        <option name="5:3" >
+			<graphics_card>
+				<resolution aspect="5:3" />
+			</graphics_card>
+		</option>
+    </category>
+    
+    <category name="multisampling" >
+        <option name="off" >
+          <graphics_card>
+            <multisampling option="off">
+              <back_buffer level="0" />
+              <colour_target level="0" />
+              <minimap level="0" />
+              <dynamic_envmap level="0" />
+              <static_envmap level="0" />
+              <rear_view_mirror level="0" />
+            </multisampling>
+          </graphics_card>
+        </option>
+
+    <option name="1" translation="pc_gfx_aaoption_1" >
+      <graphics_card>
+        <multisampling option="1">
+          <back_buffer level="1" />
+          <colour_target level="1" />
+          <minimap level="3" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="2" translation="pc_gfx_aaoption_2" >
+      <graphics_card>
+        <multisampling option="2">
+          <back_buffer level="2" />
+          <colour_target level="2" />
+          <minimap level="3" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="3" translation="pc_gfx_aaoption_3" >
+      <graphics_card>
+        <multisampling option="3">
+          <back_buffer level="3" />
+          <colour_target level="3" />
+          <minimap level="3" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="4" translation="pc_gfx_aaoption_4" >
+      <graphics_card>
+        <multisampling option="4">
+          <back_buffer level="4" />
+          <colour_target level="4" />
+          <minimap level="3" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="5" translation="pc_gfx_aaoption_5" >
+      <graphics_card>
+        <multisampling option="5">
+          <back_buffer level="5" />
+          <colour_target level="5" />
+          <minimap level="3" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="6" translation="pc_gfx_aaoption_6" >
+      <graphics_card>
+        <multisampling option="6">
+          <back_buffer level="6" />
+          <colour_target level="6" />
+          <minimap level="3" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="7" translation="pc_gfx_aaoption_7" >
+      <graphics_card>
+        <multisampling option="7">
+          <back_buffer level="7" />
+          <colour_target level="7" />
+          <minimap level="3" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="8" translation="pc_gfx_aaoption_8" >
+      <graphics_card>
+        <multisampling option="8">
+          <back_buffer level="8" />
+          <colour_target level="8" />
+          <minimap level="3" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+
+    <!-- specific multisamling modes -->
+    
+    <option name="2xmsaa" >
+      <graphics_card>
+        <multisampling option="2xmsaa">
+          <back_buffer level="2xmsaa" />
+          <colour_target level="2xmsaa" />
+          <minimap level="2xmsaa" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="4xmsaa" >
+      <graphics_card>
+        <multisampling option="4xmsaa">
+          <back_buffer level="4xmsaa" />
+          <colour_target level="4xmsaa" />
+          <minimap level="4xmsaa" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="8xmsaa" >
+      <graphics_card>
+        <multisampling option="8xmsaa">
+          <back_buffer level="8xmsaa" />
+          <colour_target level="8xmsaa" />
+          <minimap level="4xmsaa" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="16xmsaa" >
+      <graphics_card>
+        <multisampling option="16xmsaa">
+          <back_buffer level="16xmsaa" />
+          <colour_target level="16xmsaa" />
+          <minimap level="4xmsaa" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="8xcsaa" >
+      <graphics_card>
+        <multisampling option="8xcsaa">
+          <back_buffer level="8xcsaa" />
+          <colour_target level="8xcsaa" />
+          <minimap level="4xmsaa" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="16xcsaa" >
+      <graphics_card>
+        <multisampling option="16xcsaa">
+          <back_buffer level="16xcsaa" />
+          <colour_target level="16xcsaa" />
+          <minimap level="4xmsaa" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="8xqcsaa" >
+      <graphics_card>
+        <multisampling option="8xqcsaa">
+          <back_buffer level="8xqcsaa" />
+          <colour_target level="8xqcsaa" />
+          <minimap level="4xmsaa" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+    <option name="16xqcsaa" >
+      <graphics_card>
+        <multisampling option="16xqcsaa">
+          <back_buffer level="16xqcsaa" />
+          <colour_target level="16xqcsaa" />
+          <minimap level="4xmsaa" />
+          <dynamic_envmap level="0" />
+          <static_envmap level="0" />
+          <rear_view_mirror level="0" />
+        </multisampling>
+      </graphics_card>
+    </option>
+
+  </category>
+
+  <category name="headlights" >
+      <option name="low">
+        <headlights headlightQuality="0" />
+      </option>
+      <option name="medium">
+        <headlights headlightQuality="1" />
+      </option>
+      <option name="high">
+        <headlights headlightQuality="2" />
+      </option>
+    </category>
+
+    <category name="vsync" >
+		<option name="on">
+			<graphics_card>
+				<resolution vsync="1" />
+            </graphics_card>
+        </option>
+		<option name="off">
+			<graphics_card>
+				<resolution vsync="0" />
+            </graphics_card>
+        </option>
+    </category>
+
+    <category name="fullscreen" >
+      <option name="true" translation="on_off_on" >
+        <graphics_card>
+          <resolution fullscreen="true" />
+        </graphics_card>
+      </option>
+      <option name="false" translation="on_off_off" >
+        <graphics_card>
+          <resolution fullscreen="false" />
+        </graphics_card>
+      </option>
+    </category>
+
+	<category name="gamma" >
+		<option name="0.5">
+			<graphics_card>
+				<gamma level="0.5" />
+			</graphics_card>
+		</option>
+		<option name="0.6">
+			<graphics_card>
+				<gamma level="0.6" />
+			</graphics_card>
+		</option>
+		<option name="0.7">
+			<graphics_card>
+				<gamma level="0.7" />
+			</graphics_card>
+		</option>
+		<option name="0.8">
+			<graphics_card>
+				<gamma level="0.8" />
+			</graphics_card>
+		</option>
+		<option name="0.9">
+			<graphics_card>
+				<gamma level="0.9" />
+			</graphics_card>
+		</option>
+		<option name="1.0">
+			<graphics_card>
+				<gamma level="1.0" />
+			</graphics_card>
+		</option>
+		<option name="1.1">
+			<graphics_card>
+				<gamma level="1.1" />
+			</graphics_card>
+		</option>
+		<option name="1.2">
+			<graphics_card>
+				<gamma level="1.2" />
+			</graphics_card>
+		</option>
+		<option name="1.3">
+			<graphics_card>
+				<gamma level="1.3" />
+			</graphics_card>
+		</option>
+		<option name="1.4">
+			<graphics_card>
+				<gamma level="1.4" />
+			</graphics_card>
+		</option>
+		<option name="1.5">
+			<graphics_card>
+				<gamma level="1.5" />
+			</graphics_card>
+		</option>
+		<option name="1.6">
+			<graphics_card>
+				<gamma level="1.6" />
+			</graphics_card>
+		</option>
+		<option name="1.7">
+			<graphics_card>
+				<gamma level="1.7" />
+			</graphics_card>
+		</option>
+		<option name="1.8">
+			<graphics_card>
+				<gamma level="1.8" />
+			</graphics_card>
+		</option>
+		<option name="1.9">
+			<graphics_card>
+				<gamma level="1.9" />
+			</graphics_card>
+		</option>
+		<option name="2.0">
+			<graphics_card>
+				<gamma level="2.0" />
+			</graphics_card>
+		</option>
+		<option name="2.1">
+			<graphics_card>
+				<gamma level="2.1" />
+			</graphics_card>
+		</option>
+		<option name="2.2">
+			<graphics_card>
+				<gamma level="2.2" />
+			</graphics_card>
+		</option>
+		<option name="2.3">
+			<graphics_card>
+				<gamma level="2.3" />
+			</graphics_card>
+		</option>
+		<option name="2.4">
+			<graphics_card>
+				<gamma level="2.4" />
+			</graphics_card>
+		</option>
+		<option name="2.5">
+			<graphics_card>
+				<gamma level="2.5" />
+			</graphics_card>
+		</option>
+    </category>
+    
+	<category name="wind" >
+		<option name="on" >
+			<wind particles="true" groundcover="true" />
+		</option>
+		<option name="off" >
+			<wind particles="false" groundcover="false" />
+		</option>
+    </category>
+    
+    <category name="shadows" >
+        <option name="off" >
+            <shadows enabled="false" size="256" maskQuality="1" />
+            <dynamic_ambient_occ enabled="false" />
+        </option>
+        <option name="ultralow" >
+            <shadows enabled="false" size="512" maskQuality="1" />
+            <dynamic_ambient_occ enabled="false" />
+        </option>
+		<option name="low" >
+            <shadows enabled="false" size="768" maskQuality="1" />
+            <dynamic_ambient_occ enabled="true" />
+        </option>
+        <option name="medium" >
+            <shadows enabled="true" size="1024" maskQuality="1" />
+            <dynamic_ambient_occ enabled="true" />
+        </option>
+        <option name="high" >
+            <shadows enabled="true" size="2048" maskQuality="2" />
+            <dynamic_ambient_occ enabled="true" />
+        </option>
+        <option name="ultra" >
+            <shadows enabled="true" size="4096" maskQuality="2" />
+            <dynamic_ambient_occ enabled="true" />
+        </option>
+    </category>
+    
+    <category name="particles" >
+		<option name="off" >
+            <particles enabled="false" collisions="false" max="250" />
+		</option>
+		<option name="ultralow" >
+            <particles enabled="false" collisions="false" max="500" />
+		</option>
+		<option name="low" >
+            <particles enabled="true" collisions="false" max="500" />
+		</option>
+		<option name="medium" >
+            <particles enabled="true" collisions="false" max="2000" />
+		</option>
+		<option name="high" >
+            <particles enabled="true" collisions="true" max="4000" />
+        </option>
+		<option name="ultra" >
+            <particles enabled="true" collisions="true" max="6000" />
+        </option>
+    </category>
+    
+    <category name="mirrors" >
+		<option name="on" >
+            <mirrors enabled="true" forceBilinear="true" width="512" height="128" />
+        </option>
+		<option name="off" >
+            <mirrors enabled="false" forceBilinear="true" width="512" height="128" />
+        </option>
+    </category>
+    
+    <category name="crowd" >
+		<option name="off" >
+            <crowd enabled="false" />
+		</option>
+		<option name="on" >
+            <crowd enabled="true" />
+		</option>
+    </category>
+
+    <category name="cloth" >
+		<option name="off" >
+            <cloth enabled="false" />
+		</option>
+		<option name="on" >
+            <cloth enabled="true" />
+		</option>
+    </category>
+    
+    <category name="groundCover" >
+        <option name="off" >
+            <groundcover enabled="false" layers="0" />
+		</option>
+        <option name="low" >
+            <groundcover enabled="true" layers="1" />
+		</option>
+		<option name="medium" >
+            <groundcover enabled="true" layers="2" />
+		</option>
+		<option name="high" >
+            <groundcover enabled="true" layers="4" />
+		</option>
+    </category>
+
+    <category name="vehicleDrivers" >
+		<option name="off" >
+            <vehicles characterQuality="0" />
+		</option>
+		<option name="low" >
+            <vehicles characterQuality="1" />
+		</option>
+		<option name="medium" >
+            <vehicles characterQuality="2" />
+		</option>
+		<option name="high" >
+            <vehicles characterQuality="3" />
+		</option>
+		<option name="ultra" >
+            <vehicles characterQuality="4" />
+		</option>
+    </category>
+    
+    <category name="vehicleLOD" >
+		<option name="low" >
+            <vehicles lodQuality="0" />
+		</option>
+		<option name="medium" >
+            <vehicles lodQuality="1" />
+		</option>
+		<option name="high" >
+            <vehicles lodQuality="2" />
+		</option>
+		<option name="ultra" >
+            <vehicles lodQuality="3" />
+		</option>
+    </category>
+
+    <category name="trees" >
+        <option name="low" >
+            <trees visibility="500" low="180" high="60" lodQuality="1" />
+		</option>
+        <option name="medium" >
+            <trees visibility="1000" low="180" high="60" lodQuality="1" />
+		</option>
+        <option name="high" >
+            <trees visibility="2000" low="180" high="60" lodQuality="2" />
+		</option>
+    </category>
+
+    <category name="reflections" >
+        <option name="low" >
+            <reflections faces="0" size="256" forceBilinear="true" />
+		</option>
+        <option name="medium" >
+            <reflections faces="6" size="256" forceBilinear="true" />
+		</option>
+        <option name="high" >
+            <reflections faces="6" size="512" forceBilinear="true" />
+		</option>
+        <option name="ultra" >
+            <reflections faces="6" size="512" forceBilinear="false" />
+		</option>
+    </category>
+    
+    <category name="post" >
+		<option name="on" >
+            <postprocess enabled="true" />
+        </option>
+        <option name="off" >
+            <postprocess enabled="false" />
+		</option>
+    </category>
+    
+    <category name="track_relections" >
+		<option name="on" >
+            <track_reflections enabled="true" />
+        </option>
+        <option name="off" >
+            <track_reflections enabled="false" />
+		</option>
+    </category>
+
+    <category name="motionBlur" >
+		<option name="on" >
+            <postprocess blur="true" />
+        </option>
+        <option name="off" >
+            <postprocess blur="false" />
+		</option>
+    </category>
+    
+    <category name="skidmarks" >
+		<option name="on" >
+            <skidmarks enabled="true" />
+		</option>
+		<option name="off" >
+            <skidmarks enabled="false" />
+		</option>
+    </category>
+
+	<category name="physics" >
+		<option name="low" >
+            <physics environmentalDamage="false" vehicleDamage="false" />
+		</option>
+		<option name="medium" >
+            <physics environmentalDamage="false" vehicleDamage="true" />
+		</option>
+		<option name="high" >
+            <physics environmentalDamage="true" vehicleDamage="true" />
+		</option>
+    	</category>
+    
+	<!-- Individual audio settings - The components below represent individual setting which may be altered via the front end. -->
+	<category name="audioMixing" >
+		<option name="software" >
+			<audio_card>
+				<audio mixing="software" />
+			</audio_card>
+		</option>
+		<option name="creative" >
+			<audio_card>
+				<audio mixing="creative" />
+			</audio_card>
+		</option>
+		<option name="OpenAL" >
+			<audio_card>
+				<audio mixing="default" />
+			</audio_card>
+		</option>
+    </category>
+    
+    <category name="audioQuality" >
+		<option name="off" >
+			<audio_card>
+				<audio reverbs="0" />
+			</audio_card>
+		</option>
+		<option name="low" >
+			<audio_card>
+				<audio reverbs="1" />
+			</audio_card>
+		</option>
+		<option name="high" >
+			<audio_card>
+				<audio reverbs="2" />
+			</audio_card>
+		</option>
+    </category>
+      
+    <category name="audioVoices" >
+		<option name="40" >
+			<audio_card>
+				<audio voices="40" />
+			</audio_card>
+		</option>
+		<option name="50" >
+			<audio_card>
+				<audio voices="50" />
+			</audio_card>
+		</option>
+		<option name="60" >
+			<audio_card>
+				<audio voices="60" />
+			</audio_card>
+		</option>
+		<option name="70" >
+			<audio_card>
+				<audio voices="70" />
+			</audio_card>
+		</option>
+		<option name="80" >
+			<audio_card>
+				<audio voices="80" />
+			</audio_card>
+		</option>
+		<option name="creative" >
+			<audio_card>
+				<audio voices="creative" />
+			</audio_card>
+		</option>
+		<option name="default" >
+			<audio_card>
+				<audio voices="default" />
+			</audio_card>
+		</option>
+    </category>
+       
+</hardware_config_options>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<workerMap>
+
+  <workerThread name="core_0" priority="normal" core="0" stacksize="131072" />
+  <workerThread name="core_1" priority="normal" core="1" stacksize="131072" />
+  <workerThread name="core_2" priority="normal" core="2" stacksize="131072" />
+  <workerThread name="core_3" priority="normal" core="3" stacksize="131072" />
+  <workerThread name="core_4" priority="normal" core="4" stacksize="131072" />
+  <workerThread name="core_5" priority="normal" core="5" stacksize="131072" />
+  <workerThread name="core_6" priority="normal" core="6" stacksize="131072" />
+  <workerThread name="core_7" priority="normal" core="7" stacksize="131072" />
+  
+  <workerSet name="generic_workers" jobpoolsize="32768" >
+		<worker name="core_1" />
+		<worker name="core_2" />
+		<worker name="core_3" />
+		<worker name="core_5" />
+		<worker name="core_6" />
+		<worker name="core_7" />
+  </workerSet>
+
+  <workerSet name="collision" jobpoolsize="32768" >
+      <worker name="core_1" />
+      <worker name="core_2" />
+      <worker name="core_3" />
+	  <worker name="core_5" />
+	  <worker name="core_6" />
+	  <worker name="core_7" />
+  </workerSet>
+
+  <workerSet name="solver" jobpoolsize="32768" >
+		<worker name="core_1" />
+		<worker name="core_2" />
+	    <worker name="core_5" />
+	    <worker name="core_6" />		
+  </workerSet>
+
+    <workerSet name="integrator" jobpoolsize="32768" >
+        <worker name="core_1" />
+        <worker name="core_2" />
+        <worker name="core_3" />
+		<worker name="core_5" />
+		<worker name="core_6" />
+		<worker name="core_7" />
+    </workerSet>
+
+    <workerSet name="plugin_finalise" jobpoolsize="32768" >
+    <worker name="core_1" />
+  </workerSet>
+
+  <workerSet name="cloth" jobpoolsize="32768" >
+		<worker name="core_1" />
+		<worker name="core_2" />
+		<worker name="core_3" />
+		<worker name="core_5" />
+		<worker name="core_6" />
+		<worker name="core_7" />
+  </workerSet> 
+
+  <workerSet name="handling" jobpoolsize="32768" >
+		<worker name="core_1" />
+		<worker name="core_2" />
+		<worker name="core_3" />
+		<worker name="core_5" />
+		<worker name="core_6" />
+		<worker name="core_7" />
+	</workerSet>
+
+	<workerSet name="ai" jobpoolsize="32768" >
+		<worker name="core_1" />
+		<worker name="core_2" />
+		<worker name="core_3" />
+		<worker name="core_5" />
+		<worker name="core_6" />
+		<worker name="core_7" />
+  </workerSet>   
+
+  <workerSet name="vehicleSingleThreaded" jobpoolsize="32768" >
+    <!-- IMPORTANT - maximise thread usage for this workerSet as it is used only during the single threaded update, hence all threads are waiting for it -->
+    <worker name="core_0" />
+    <worker name="core_1" />
+    <worker name="core_2" />
+    <worker name="core_3" />
+    <worker name="core_4" />
+    <worker name="core_5" />
+    <worker name="core_6" />
+    <worker name="core_7" />
+  </workerSet>
+
+  <workerSet name="pfx" jobpoolsize="32768" >
+		<worker name="core_1" />
+		<worker name="core_2" />
+		<worker name="core_3" />
+		<worker name="core_5" />
+		<worker name="core_6" />
+		<worker name="core_7" />
+  </workerSet>
+
+  <workerSet name="visibility" jobpoolsize="32768" >
+		<worker name="core_1" />
+		<worker name="core_2" />
+		<worker name="core_3" />
+		<worker name="core_5" />
+		<worker name="core_6" />
+		<worker name="core_7" />
+	</workerSet>
+
+	<workerSet name="anim" jobpoolsize="32768" >
+        <worker name="core_3" />
+		<!--worker name="core_7" /-->
+
+  </workerSet>
+  
+  <workerSet name="build_crowd" jobpoolsize="32768" >
+		<worker name="core_1" />
+		<worker name="core_2" />
+		<worker name="core_3" />
+		<worker name="core_5" />
+		<worker name="core_6" />
+		<worker name="core_7" />
+  </workerSet>
+
+  <workerSet name="in_car_characters" jobpoolsize="32768" >
+    <worker name="core_1" />
+    <worker name="core_2" />
+    <worker name="core_3" />
+	<worker name="core_5" />
+	<worker name="core_6" />
+	<worker name="core_7" />
+  </workerSet>
+
+  <workerSet name="view_manager" jobpoolsize="32768" >
+    <worker name="core_1" />
+    <worker name="core_2" />
+    <worker name="core_3" />
+	<worker name="core_5" />
+	<worker name="core_6" />
+	<worker name="core_7" />
+  </workerSet>
+
+  <workerSet name="storage" jobpoolsize="32768" >
+	<worker name="core_1" />
+	<worker name="core_2" />
+	<worker name="core_3" />
+	<worker name="core_5" />
+	<worker name="core_6" />
+	<worker name="core_7" />
+  </workerSet>
+
+  <workerSet name="pssg_storage" jobpoolsize="32768" >
+	<worker name="core_2" />
+	<!--worker name="core_6" /-->	
+  </workerSet>
+
+  <workerSet name="osdUpdateSet" jobpoolsize="32768" >
+		<worker name="core_1" />
+		<worker name="core_2" />
+		<worker name="core_3" />
+	    <worker name="core_5" />
+	    <worker name="core_6" />
+	    <worker name="core_7" />
+  </workerSet>
+
+  <workerSet name="ground_cover" jobpoolsize="32768" >
+		<worker name="core_1" />
+		<worker name="core_2" />
+		<worker name="core_3" />
+	    <worker name="core_5" />
+	    <worker name="core_6" />
+	    <worker name="core_7" />
+  </workerSet>
+
+  <workerSet name="audio" jobpoolsize="32768" >
+		<worker name="core_3" />
+	    <worker name="core_7" />
+  </workerSet>
+  <workerSet name="softbody" jobpoolsize="32768" >
+    <worker name="core_3" />
+    <worker name="core_7" />
+  </workerSet>
+  <workerSet name="damageSkinning" jobpoolsize="32768" >
+    <worker name="core_7" />
+    <worker name="core_6" />
+    <worker name="core_5" />
+    <worker name="core_3" />
+    <worker name="core_2" />
+    <worker name="core_1" />
+  </workerSet>
+</workerMap>
