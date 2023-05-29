@@ -1,5 +1,5 @@
 # GridMTFix
-A Race Driver: Grid Multithread Fix
+A Race Driver: Grid Multithread Fix, for SteamOS or Linux
 
 ## A little insight
 The game was launched on 2008, just prior to Intel's Sandy Bridge Core microarchitecture , which more or less marked a milestone on multithreading as we all know it nowadays.
