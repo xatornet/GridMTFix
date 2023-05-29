@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#Copia de XML previa
+xml_folder="Files"
+destination_folder="$HOME/.local/share/Steam/steamapps/common/Grid/system/"
+
+cp -f "$xml_folder"/*.xml "$destination_folder"
+
 # Obtener el número de cores lógicos del CPU
 cores=$(nproc --all)
 
