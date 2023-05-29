@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hardware_settings_restrictions>
+
+    <systemInfo>
+        <restrict_info>
+        
+            <restrict_if name="totalMemory" op="int_ge" value="2000000">
+                <restrict_set name="rating" default="3" />
+            </restrict_if>
+            
+            <restrict_else>
+                <restrict_set name="rating" default="2" />
+            </restrict_else>
+            
+        </restrict_info>
+    </systemInfo>
+
+    <cpu>
+        <restrict_info>
+        
+            <restrict_if name="cores" op="int_eq" value="2">
+                <restrict_set name="rating" default="3" />
+            </restrict_if>
+            
+            <restrict_if name="cores" op="int_eq" value="4">
+                <restrict_set name="rating" default="3" />
+            </restrict_if>
+            
+            <restrict_if name="cores" op="int_ge" value="8">
+                <restrict_set name="rating" default="3" />
+            </restrict_if>
+            
+            <restrict_if name="hyperThreading" op="bo_eq" value="true">
+                <restrict_set name="rating" default="2" />
+            </restrict_if>
+            
+            <restrict_else>
+                <restrict_set name="rating" default="1" />
+            </restrict_else>
+            
+        </restrict_info>
+    </cpu>
+        
+	<graphics_card>
+        <restrict_info>
+        
+            <restrict_if name="name" op="str_str" value="GeForce 6">
+                <restrict_set name="rating" default="1" />
+            </restrict_if>
+            
+            <restrict_if name="name" op="str_str" value="GeForce 7">
+                <restrict_set name="rating" default="2" />
+            </restrict_if>
+            
+            <restrict_if name="name" op="str_str" value="GeForce 8400">
+                <restrict_set name="rating" default="1" />
+            </restrict_if>
+            
+            <restrict_if name="name" op="str_str" value="GeForce 8">
+                <restrict_set name="rating" default="3" />
+            </restrict_if>
+            
+            <restrict_if name="name" op="str_str" value="GeForce 9">
+                <restrict_set name="rating" default="3" />
+            </restrict_if>
+            
+            <restrict_if name="name" op="str_str" value="GeForce GTX">
+                <restrict_set name="rating" default="3" />
+            </restrict_if>
+			
+			<restrict_if name="name" op="str_str" value="GeForce RTX">
+                <restrict_set name="rating" default="3" />
+            </restrict_if>
+            
+            <restrict_if name="name" op="str_str" value="Radeon X13">
+                <restrict_set name="rating" default="1" />
+            </restrict_if>
+            
+            <restrict_if name="name" op="str_str" value="Radeon X15">
+                <restrict_set name="rating" default="1" />
+            </restrict_if>
+
+            <restrict_if name="name" op="str_str" value="Radeon X16">
+                <restrict_set name="rating" default="1" />
+            </restrict_if>
+
+            <restrict_if name="name" op="str_str" value="Radeon X18">
+                <restrict_set name="rating" default="1" />
+            </restrict_if>
+                        
+            <restrict_if name="name" op="str_str" value="Radeon X19">
+                <restrict_set name="rating" default="2" />
+            </restrict_if>
+            
+            <restrict_if name="name" op="str_str" value="Radeon HD">
+                <restrict_set name="rating" default="3" />
+            </restrict_if>
+			
+			<restrict_if name="name" op="str_str" value="Radeon RX">
+                <restrict_set name="rating" default="3" />
+            </restrict_if>
+
+            <restrict_if name="name" op="str_str" value="Intel">
+                <restrict_set name="rating" default="1" />
+            </restrict_if>
+            
+            <restrict_else>
+                <restrict_set name="rating" default="2" />
+            </restrict_else>
+            
+        </restrict_info>  
+	</graphics_card>
+			
+</hardware_settings_restrictions>
