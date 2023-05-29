@@ -20,10 +20,10 @@ Well, it copies my fix xml files to your game's system folder, and then using a 
 This scripts is expecting that you use Race Driver: Grid with a DRMLess exe with a 4GB LAA patch applied. In case you are using GOG or Steam Releases, read below:
 
 ### * GOG Release
-Gog release is already DRMless, so you only have to apply the 4GB LAA Patch. Use [NTCore's 4GB Tpatch tool](https://ntcore.com/?page_id=371) to patch the exe file and you are good to continue with the other steps of this document.
+Gog release is already DRMless, so you only have to apply the 4GB LAA Patch. Use [NTCore's 4GB Patch tool](https://ntcore.com/?page_id=371) to patch the exe file and you are good to continue with the other steps of this document.
 
 ### * Steam Release
-Steam release has DRM, so if you apply the 4GB LAA Patch to it, it will fail. You have to remove it's DRM using [atom0s Steamless tool](https://github.com/atom0s/Steamless) and then, use the [NTCore's 4GB Tpatch tool](https://ntcore.com/?page_id=371) to patch the exe file. It's mandatory doing it in this exact order. Then, continue with this instructions.
+Steam release has DRM, so if you apply the 4GB LAA Patch to it, it will fail. You have to remove it's DRM using [atom0s Steamless tool](https://github.com/atom0s/Steamless) and then, use the [NTCore's 4GB Patch tool](https://ntcore.com/?page_id=371) to patch the exe file. It's mandatory doing it in this exact order. Then, continue with this instructions.
 
 ## How to apply the fix
 If you already have the requirements above done, the fix is easy to apply.
