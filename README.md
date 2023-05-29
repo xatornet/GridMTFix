@@ -17,7 +17,8 @@ Also, this method fixes several other hardware detection problems as:
 Well, it copies my fix xml files to your game's system folder, and then using a template, will detect your CPU's logical cores, and create a personalized hardware restriction file, to make your the game uses the most amount of cores possible.
 
 ## Important Requirement
-This scripts is expecting that you use Grid from Steam, and also, I expect you are using a DRMLess exe with a 4GB LAA patch applied.
+This scripts is expecting that you use Grid from Steam, and also, It expect you are using a DRMLess exe with a 4GB LAA patch applied.
+
 It also expects that you already have Git installed.
 
 If you have another release of the game, for instance, GOG release, you'll have to change the destination_folder and output_file paths to your liking before running the script.
