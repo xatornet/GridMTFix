@@ -24,7 +24,7 @@ Use the v0.2 release now, be sure to select the GOG exe. It will automatically p
 ### * Steam Release
 ~~Steam release has DRM, so if you apply the 4GB LAA Patch to it, it will fail. You have to remove it's DRM using [atom0s Steamless tool](https://github.com/atom0s/Steamless) and then, use the [NTCore's 4GB Patch tool](https://ntcore.com/?page_id=371) to patch the exe file. It's mandatory doing it in this exact order. Then, continue with this instructions.~~
 
-Use the v0.2 release now, bes usare to select de Steam exe, it will automatically patch the exe to remove DRM and apply the MTFix.
+Use the v0.2 release now, be sure to select de Steam exe, it will automatically patch the exe to remove DRM and apply the MTFix.
 
 ## How to apply the fix
 If you already have the requirements above done, the fix is easy to apply.
