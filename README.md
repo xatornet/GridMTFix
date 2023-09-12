@@ -43,3 +43,7 @@ Let it do its things
 Your settings should be gone. Set them up again.
 
 ### If everything works, you can now play Race Driver: Grid making the most out of your hardware.
+
+### * Strong Recommendation
+I really encourage you to pair this fix with [DXVK from Doitsujin](https://github.com/doitsujin/dxvk) if your GPU is Vulkan capable. On my system I go from 180fps in race with D3D9 to 285fps with Vulkan. Give it a try!! 
+
