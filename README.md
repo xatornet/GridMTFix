@@ -28,7 +28,7 @@ If you already have the requirements above done, the fix is easy to apply.
 
 ### 1-Download the fix to your home folder
 ```
-git clone https://github.com/xatornet/GridMTFix.git
+git clone https://github.com/xatornet/GridMTFix.git -b SteamOS
 ```
 
 ### 2-Set executable attributes to the script
