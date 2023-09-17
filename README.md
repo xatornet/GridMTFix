@@ -41,4 +41,10 @@ chmod +x GridMTFix.sh
 ```
 sh GridMTFix.sh
 ```
+
+### 4-Add to your launch parameters this
+```
+PROTON_FORCE_LARGE_ADDRESS_AWARE=1 %command%
+```
+
 ### If everything works, you can now play Race Driver: Grid making the most out of your hardware.
