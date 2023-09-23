@@ -8,11 +8,11 @@ function Delay {
     Start-Sleep -Seconds $seconds
 }
 Clear-Host
-# Check if grid.exe.bak exists
+# Check if grid.bak exists
     Write-Host "Checking if Exe file has been patched..."
 	Write-Host ""
 	Delay 3
-if (Test-Path -Path "grid.exe.bak") {
+if (Test-Path -Path "grid.bak") {
     Write-Host "Exe file has been already patched. No further work needed."
 	Write-Host "Loading script..."
     Delay 4
