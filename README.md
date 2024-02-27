@@ -16,15 +16,15 @@ Also, this method fixes several other hardware detection problems as:
 ## What exactly does this fix?
 Well, it copies my fix xml files to your game's system folder, and then using a template, will detect your CPU's logical cores, and create a personalized hardware restriction file, to make your the game uses the most amount of cores possible.
 
-### * GOG Release / DRMless releases
+### * GOG Release / DRMless releases / Zoom Release
 ~~Gog release is already DRMless, so you only have to apply the 4GB LAA Patch. Use [NTCore's 4GB Patch tool](https://ntcore.com/?page_id=371) to patch the exe file and you are good to continue with the other steps of this document. I will later on update the releases with an automated one for GOG. Use version v0.1 till the new automated version arrives.~~
 
-Use the v0.2 release now, be sure to select the GOG exe. It will automatically patch the exe file with the NTCore 4GB patch, and apply the MTFix.
+Use the v0.2.1 release now, be sure to select the GOG exe. It will automatically patch the exe file with the NTCore 4GB patch, and apply the MTFix.
 
 ### * Steam Release
 ~~Steam release has DRM, so if you apply the 4GB LAA Patch to it, it will fail. You have to remove it's DRM using [atom0s Steamless tool](https://github.com/atom0s/Steamless) and then, use the [NTCore's 4GB Patch tool](https://ntcore.com/?page_id=371) to patch the exe file. It's mandatory doing it in this exact order. Then, continue with this instructions.~~
 
-Use the v0.2 release now, be sure to select de Steam exe, it will automatically patch the exe to remove DRM and apply the MTFix.
+Use the v0.2.1 release now, be sure to select de Steam exe, it will automatically patch the exe to remove DRM and apply the MTFix.
 
 ## How to apply the fix
 If you already have the requirements above done, the fix is easy to apply.
