@@ -65,29 +65,10 @@ else {
 			#$cores = 64
 
 			# Definir los valores válidos de cores
-			$valid_cores = 8, 12, 16, 20, 24, 28, 32
+			$valid_cores = 1, 2, 4, 6, 8, 12, 16, 20, 24, 28, 32
 
-			# Definir el valor de grid_cores basado en el número de cores
-			if ($cores -gt 32) {
-			$grid_cores = 32
-			Write-Host "Your CPU has $cores cores, but the game is limited to 32 cores, so that will be the max core count used."
-			Delay 4
-			}
-			elseif ($cores -lt 8) {
-			$grid_cores = 8
-			Write-Host "Race Driver: Grid already supports your CPU core count."
-			Delay 4
-			}
-			else {
-			# Verificar si el número de cores está en la lista de valid_cores
-			if ($valid_cores -contains $cores) {
-				$grid_cores = $cores
-			}
-			else {
 			# Obtener el valor de valid_cores inmediatamente inferior a $cores
-			$grid_cores = $valid_cores | Where-Object { $_ -lt $cores } | Select-Object -Last 1
-			}
-			}
+			$grid_cores = $valid_cores | Where-Object { $_ -le $cores } | Select-Object -Last 1
 
 			# Ruta del archivo de plantilla y archivo de salida
 			$template_file = "Template.xml"
@@ -96,8 +77,9 @@ else {
 			# Leer el contenido de la plantilla
 			$template_content = Get-Content $template_file -Raw
 
-			# Reemplazar el valor "_Y_" por el valor de grid_cores en la plantilla
-			$updated_content = $template_content -replace "_Y_", $grid_cores
+			# Borrar todas las lineas que empiezan por comentario menos la correspondiente al número de cores
+			$grid_cores_d3 = "{0:D3}" -f $grid_cores
+			$updated_content = $template_content -replace "<!-- (?!$grid_cores_d3).*", ""
 
 			# Guardar el contenido actualizado en el archivo de salida
 			$updated_content | Set-Content $output_file
