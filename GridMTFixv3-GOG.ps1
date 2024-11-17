@@ -1,6 +1,6 @@
 $pingCount = 4
 $ntcorepatch = "https://ntcore.com/files/4gb_patch.zip"
-$GridMTFix = "https://github.com/xatornet/GridMTFix/releases/download/v0.1/GridMTFix_Win.zip"
+$GridMTFix = "https://github.com/xatornet/GridMTFix/releases/download/v0.3/GridMTFix-Resources.zip"
 
 # Function to simulate a delay
 function Delay {
