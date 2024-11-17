@@ -1,7 +1,7 @@
 $pingCount = 4
 $steamless = "https://github.com/atom0s/Steamless/releases/download/v3.1.0.3/Steamless.v3.1.0.3.-.by.atom0s.zip"
 $ntcorepatch = "https://ntcore.com/files/4gb_patch.zip"
-$GridMTFix = "https://github.com/xatornet/GridMTFix/releases/download/v0.1/GridMTFix_Win.zip"
+$GridMTFix = "https://github.com/xatornet/GridMTFix/releases/download/v0.3/GridMTFix-Resources.zip"
 
 # Function to simulate a delay
 function Delay {
