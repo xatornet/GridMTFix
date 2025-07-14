@@ -16,6 +16,9 @@ Also, this method fixes several other hardware detection problems as:
 ## What exactly does this fix?
 Well, it copies my fix xml files to your game's system folder, and then using a template, will detect your CPU's logical cores, and create a personalized hardware restriction file, to make your the game uses the most amount of cores possible.
 
+## Requirements
+This mod is based on powershell, and it's objective is to give modern systems a better support. So **Windows 10/11 with a properly updated powershell is a must**. **Windows 7 won't work for this**, and you'll have to manually do everything the mod does, as no support for these older systems is expected.
+
 ### * GOG Release / DRMless releases / Zoom Release
 ~~Gog release is already DRMless, so you only have to apply the 4GB LAA Patch. Use [NTCore's 4GB Patch tool](https://ntcore.com/?page_id=371) to patch the exe file and you are good to continue with the other steps of this document. I will later on update the releases with an automated one for GOG. Use version v0.1 till the new automated version arrives.~~
 
