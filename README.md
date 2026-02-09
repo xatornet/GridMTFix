@@ -46,7 +46,10 @@ Let it do its things
 Your settings should be gone. Set them up again.
 
 ### If everything works, you can now play Race Driver: Grid making the most out of your hardware.
+## ADDON For **Boot crash** on **4K** and High Refresh Monitors / TVs :
 
-### * Strong Recommendation
-I really encourage you to pair this fix with [DXVK from Doitsujin](https://github.com/doitsujin/dxvk) if your GPU is Vulkan capable. On my system I go from 180fps in race with D3D9 to 285fps with Vulkan. Give it a try!! 
+I've added an addon, consisting on **DXVK version 2.7.1 for 32bit extracted directly from** [Doitjujin's Github](https://github.com/doitsujin/dxvk/releases/tag/v2.7.1) and tested a config file to fix the crash to desktop issues of the game in monitors with high refresh rate and/or big resolutions like 4K and so on. 
 
+- Just apply GridGogger and then **unzip this dll and conf file next to the exe** of the game.
+
+- Then **open with a text editor the file** `dxvk.conf` and **change** `d3d9.forceRefreshRate = 144` to **your monitor's refresh rate**. 
