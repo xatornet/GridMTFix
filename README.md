@@ -53,3 +53,11 @@ I've added an addon, consisting on **DXVK version 2.7.1 for 32bit extracted dire
 - Just apply GridGogger and then **unzip this dll and conf file next to the exe** of the game.
 
 - Then **open with a text editor the file** `dxvk.conf` and **change** `d3d9.forceRefreshRate = 144` to **your monitor's refresh rate**. 
+
+## Credits to:
+-**ntcore** for the [4GB Patch](https://ntcore.com/4gb-patch/)
+
+-**atom0s** for [Steamless](https://github.com/atom0s/Steamless)
+
+-**Doitsujin** for [DXVK](https://github.com/doitsujin/dxvk)
+
