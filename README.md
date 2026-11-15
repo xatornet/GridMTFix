@@ -39,7 +39,7 @@ chmod +x GridMTFix.sh
 
 ### 3-Execute the script
 ```
-sh GridMTFix.sh
+./GridMTFix.sh
 ```
 
 ### 4-Add to your launch parameters this
